@@ -1,0 +1,15 @@
+ul
+{
+    list-style-image: url(tick.jfif);
+    background-color: burlywood;
+    color: blue;
+    padding:15px;
+    list-style-position: inside;
+}
+ol
+{
+    list-style-type: lower-roman;
+    background-color: aquamarine;
+    color: blueviolet;
+    font-size: 20px;
+}

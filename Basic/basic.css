@@ -1,0 +1,47 @@
+.abc
+{
+    color:rgb(100,100,200);
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+#para
+{
+    color:red;
+    text-transform: capitalize;
+    font-family: "sofia",sans-serif;
+    font-size: 20px;
+}
+body
+{
+    background-image: url('img_lights.jpg');
+    background-size:cover;
+}
+p
+{
+    height: 500px;
+    width: 500px;
+    margin-left: 100px;
+    border-color:brown ;
+    border-style: solid;
+    border-width: 6px;
+    border-radius: 10px;
+    background-color: aqua;
+    outline-color: palevioletred;
+    outline-style: dashed;
+    outline-width: 20px;
+    outline-offset: 10px;
+}
+a:link,a:visited
+{
+    background-color: coral;
+    color:darkgreen;
+
+}
+a:hover,a:active
+{
+    background-color: cadetblue;
+    color: brown;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

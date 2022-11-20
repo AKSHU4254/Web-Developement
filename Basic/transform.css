@@ -1,0 +1,23 @@
+div
+{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    margin-left: 100px;    
+}
+
+div:hover
+{
+    /* transform: translate(50px,100px); */
+    /* transform: scale(2,4); */
+    /* transform: scaleX(5); */
+    /* transform: scaleY(10); */
+    /* transform: skew(20deg); */
+    /* transform: skewX(45deg); */
+    /* transform: skewY(20deg); */
+    /* transform: rotate(280deg); */
+    /* transform: rotateX(45deg); */
+    /* transform: rotateY(45deg); */
+    transform: rotateZ(45deg);
+    
+}

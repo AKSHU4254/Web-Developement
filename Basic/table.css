@@ -1,0 +1,44 @@
+table,th,td
+{
+border-width:5px;
+border-style: solid;
+border-color:purple;
+width:50%;
+font-size: 20px;
+vertical-align:middle ;
+}
+
+caption
+{
+    color:red;
+    font-size: 30px;
+    letter-spacing: 10px;
+    text-shadow: 10px 5px 3px gray;
+    text-decoration: underline 5px;;
+}
+th,td
+{
+    border-bottom: 5px;
+}
+tr:nth-child(even)
+{
+    
+background-color: burlywood;
+color:green;
+}
+tr:nth-child(odd)
+{
+    background-color: aqua;
+    color:brown;
+}
+tr:hover
+{
+    background-color: blueviolet;
+    color:pink;
+   
+}
+/*div
+{
+    height: 200px;
+    width:200px;
+}*/

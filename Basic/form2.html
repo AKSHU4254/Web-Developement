@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor=aqua text=red>
+    <form>
+        <h1>Personal Details</h1>
+        Name:<input type=text name=t1><br><br>
+        Password:<input type="password" name=pwd><br><br>
+        E-mail:<input type="email"><br><br>
+        Gender:<input type="radio" name=gender value="Male">Male
+        <input type="radio" name=gender value="Female">Female <br><br>
+        Contact#:<input type="number"><br><br>
+        <h1>Educational Qualification</h1>
+        Degree:<select name=l1>
+            <option>--Select Group--
+                <option>BCA
+                    <option>BBA
+                        <option>BCS
+                        </select><br><br>
+        Engineering:<select name=l2 multiple>
+            <option>--Select Group--
+            <option>C.S.
+                <option>I.T.
+                    <option>E.&T.C.
+                    </option>
+                </select><br><br>
+        Hobbies:<input type="checkbox" name=ch1 value="Playing Chess">Playing Chess
+        <input type="checkbox" name=ch2 value="Reading Books">Reading Books<br><br>
+        Address:<br>
+        <textarea rows=5 cols=20>
+        </textarea><br><br>
+        Attach resume:<input type="file"><br><br>
+        <input type="submit" value="Submit">
+</body>
+</html>
