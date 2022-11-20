@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a,b,c;
+        add();
+        function add()  // call by function
+        {
+            var a,b,c;
+            a=parseInt(prompt("Enter a number: "));
+            b=parseInt(prompt("Enter a number: "));
+            c=a+b;
+            document.write("addition is:"+c);
+
+        }
+    </script>
+
+    
+    <script>
+        var c;
+        c=add();
+        document.write("addition is:"+c);
+        function add()   // function written the value
+        {
+            var a,b;
+            a=parseInt(prompt("enter first number"));
+            b=parseInt(prompt("enter second number"));
+            return a+b;
+        }
+    </script>
+</body>
+</html>

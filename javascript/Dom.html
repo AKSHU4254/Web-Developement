@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="head"></h2>
+    <p> sevenmentor pvt.ltd</p>
+    <p class="b">shrinath plaza, f.c road,pune</p>
+    <p class="b">dyaneshwar paduka chauk</p>
+    <p class="c">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Id perspiciatis consequatur culpa voluptates consectetur dicta maxime qui ut. 
+        Odio sequi dolor praesentium magnam explicabo a veritatis dolore mollitia maxime obcaecati!</p>
+        <p class="c">abcdefghijklmnopqrstuvwxyz</p>
+        <p id="para"></p>
+        <h4 id="h"></h4>
+        <script lang="javascript">
+            // Finding element by getelementById method
+        document.getElementById("head").innerHTML = "Welcome to Javascript";  
+        
+           // Finding element by getelementByTagName method
+        const e=document.getElementsByTagName("p");
+        document.getElementById("h").innerHTML="Text in first paragraph is:"+e[0].
+        innerHTML;
+
+         // finding element by getelementByClassName method
+        const x= document.getElementsByClassName("b");
+        // for(let i=0;i<=x.length;i++)
+        {
+        // document.getElementById("para").innerHTML+= x[i].innerHTML+"<br>"
+        } 
+        // finding HTMLelements by css selectors
+        const y=document.querySelectorAll(".c");
+        document.getElementById("para").innerHTML=
+        'all paragraph with class="c" are:'+y[0].innerHTML+"<br>"+y[1].innerHTML;
+        </script>
+        </script>
+</body>
+</html>

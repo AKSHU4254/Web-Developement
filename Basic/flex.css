@@ -1,0 +1,27 @@
+#flx
+{
+    height: 500px;
+    width:800px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction:row;
+
+}
+.items
+{
+    flex-basis: 100px;
+    /* flex-grow: 2; */
+    /* flex-shrink: 3;   */
+}
+#flx div:nth-of-type(4)
+{
+   /* flex-grow: 3; */
+    flex-shrink: 2;
+}
+img
+{
+    height: 100px;
+    width: 100px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Event</title>
+    <script lang="javascript">
+        function l()
+        {
+            document.bgColor="orange"
+        }  
+        function u()
+        {
+            alert("you Have Close Window");
+        }
+        function sub()
+        {
+            alert("form Submited Successfully !!");
+        } 
+        function re()
+        {
+            alert("You Have Cleared The fill form Please fill it again");
+        }   
+        function foc()
+        {
+            document.getElementById("t1").style.backgroundColor="yellow";
+            document.getElementById("t1").style.color="red";
+        }
+        function upper()
+        {
+            var a;
+            a=document.getElementById("t2");
+            a.value=a.value.toUpperCase();
+        }
+        function sel()
+        {   
+            document.getElementById("t2").style.color="Green";
+            document.getElementById("t2").style.fontSize="30px";
+        }
+        function change()
+        {
+            var x;
+            x=document.getElementById("city").value;
+            document.getElementById("h").innerHTML="You Have Selected "+x;
+        }
+    
+    
+       </script>
+</head>
+<body onload="l()" onunload="u()">
+    <form name="frm" onsubmit="sub()" onreset="re()">
+        Enter Name:<input type="text" id="t1" onfocus="foc()"><br>
+        Enter Lastname:<input type="text" id="t2" onblur="upper()" onselect="sel()"><br>
+        City:<select id="city" onchange="change()"><br>
+            <option>Pune</option>
+            <option>Mumbai</option>
+            <option>Delhi</option>
+            <option>Nagpur</option></select><br>
+            <h2 id="h"></h2>
+            <input type="submit" value="Submit">
+            <input type="Reset" value="Reset">
+
+     
+</body>
+</html>

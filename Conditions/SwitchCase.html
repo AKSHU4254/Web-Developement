@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a,b,add,sub,div,mul,ch;
+        a=parseInt(prompt("Enter 1St Number"));
+        b=parseInt(prompt("Enter 2nd Number"));
+        alert("Select Operation You want to perform: "+"\n"+"1:Addition"+"\n"+"2:Subtraction"+"\n"+"3:Multiplication"+"\n"+"4:Division");
+        ch=parseInt(prompt("Enter Your Choice"));
+        switch(ch)
+        {
+            case 1: add=a+b;
+            document.write("addition is"+add);
+            break;50
+            case 2: sub=a-b;
+            document.write("Subtraction is"+sub);
+            break;
+            case 3: mul=a*b;
+            document.write("Multiplication is"+mul);
+            break;
+            case 4: div=a/b;
+            document.write("Divison is"+div);
+            break;
+            default:
+                document.write("Invalid Choice");
+        }
+        
+        </script>
+</body>
+</html>
