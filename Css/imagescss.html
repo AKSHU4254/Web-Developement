@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .img1{
+            /* Images in Reflected position  */
+            height: 200px;
+            width: 200px;
+            border: 2px solid red;
+            border-radius: 8px;
+            padding: 10px;
+            width: 150px;
+            -webkit-box-reflect:right 50px  ;
+        }
+
+        .img2{
+            /* Images are in circle shape */
+            border: 2px solid red;
+            border-radius: 50%;
+            padding: 10px;
+            width: 150px;
+            height: 150px;
+        }
+
+        .img3{
+            border: 2px solid red;
+            border-radius: 8px;
+            padding: 10px;
+            width: 500px;
+        }
+
+        .img4:hover{
+            /* images down with color shadow 5px = right side width, 10px= bottom side width 50  */
+            box-shadow: 5px 10px 8  px rgb(73, 0, 141);
+            
+        }
+        .img5{
+            /* Image position was change but anather element not effect his width */
+            position: relative;
+            z-index: -1;
+            width: 500px;
+        }
+        .heading{
+            position: absolute;
+            top: 100px;
+            left: 150px;
+            color: red;
+            font-size: 35px;
+        }
+        .b{
+            filter: brightness(250%);
+        }
+        .b1{
+            filter:contrast(180%) ;
+        }
+        .b2{
+            filter: grayscale(100%);
+        }
+        .b3{
+            filter:drop-shadow( 8px 8px 10px green);
+        }
+        .b4{
+            filter: hue-rotate(90deg);
+        }
+        .b5{
+            filter: invert(100%);
+        }
+        .b6{
+            filter: opacity(50%);
+        }
+        .b7{
+            filter: saturate(7);
+        }
+        .b8{
+            filter: sepia(100%);
+        }
+        .b9{
+            filter: blur(2px);
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heading">Image Reflect</h1>
+    <img src="/CSS/aa.jpg" class="img3 img4" /> <br>
+
+
+    <!-- <img src="/CSS/images/KTHM LOgo.jpg" class="img2" /> -->
+
+</body>
+</html>

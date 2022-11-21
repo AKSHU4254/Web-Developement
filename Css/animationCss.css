@@ -1,0 +1,72 @@
+div{
+    height: 100px;
+    width: 100px;
+    /* border-radius: 50%; */
+    position: relative;
+    background-color: yellow;
+    animation-name: anim;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+    animation-direction: alternate ;
+    border: 5px black dashed;
+}
+
+/* @keyframes anim
+{
+    from{background-color: blue; opacity: 0;}
+    to{background-color: black; opacity: 1;}
+} */
+
+@keyframes anim
+{
+    0%{background-color: red;left: 0px; top: 0px;opacity: 0;}
+    25%{background-color: green;left: 200px; top: 0px;opacity: 0.2;}
+    50%{background-color: purple;left: 200px; top: 200px;opacity: 0.5;}
+    75%{background-color: yellow;left: 0px; top: 200px;opacity: 0.8;}
+    100%{background-color:black;left: 0px; top: 0px;opacity: 1;}
+}
+
+/* @keyframes anim
+{
+    0%{background-color: rgb(149, 97, 178); opacity: 0;}
+    25%{background-color: red; opacity: 0.3;}
+    50%{background-color: wheat; opacity: 0.5;}
+    75%{background-color: rgb(0, 0, 0); opacity: 0.8;}
+    100%{background-color: blue; opacity: 1;}    
+} */
+
+.mar{
+    margin-left: 200px;
+    
+}
+.mar3{
+    margin-left: 200px;
+    margin-bottom: -550px;
+}
+.mar1{
+    margin-left: 400px;
+}
+
+#div1{
+    animation-timing-function: ease;
+}
+#div2{
+    animation-timing-function: ease-in;
+}
+#div3{
+    animation-timing-function: ease-in-out;
+}
+#div4{
+    animation-timing-function: ease-out;
+}
+#div5{
+    animation-timing-function: steps(5);
+}
+#div6{
+    animation-timing-function: linear;
+}
+#div7{
+    animation-timing-function: cubic-bezier(0.175,0.885,0.32,1.275);
+}
+

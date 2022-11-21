@@ -1,0 +1,64 @@
+input[type=text], input[type=password], input[type=email]
+{
+    background-color: rgb(8, 164, 242);
+    width: 250px;
+    color: brown;
+    font-size: 20px;
+    box-shadow: seashell;
+    border-inline-color: black;
+    border: 2px solid rgb(231, 225, 234);
+}
+
+div{
+    color: red;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.fd{
+    font-family: 'Inconsolata', serif;
+    }
+
+    select{
+        border: 5px solid rgb(36, 7, 7);
+        border-radius: 8px;
+        
+        background-color: rgb(161, 202, 125);
+        height: 50px;
+        width: 300px;
+        color: brown;
+    }
+    textarea{
+        border: 5px solid purple;
+        border-radius: 10px;
+        font-size: 15px;
+        font-family:cursive ;
+        background-color: rgb(21, 18, 18);
+        height: 150px;
+        width: 300px;
+        color: rgb(137, 250, 7);
+    }
+    body{
+        background-color: black;
+    }
+    input[type=submit], input[type=reset]
+    {
+        background-color: rgb(27, 0, 182);
+        border: 2px solid orange;
+        border-radius: 5px;
+        height: 50px;
+        width: 100px;
+        color: wheat;
+        font-size: large;
+        text-align: center;
+    }
+    input[type=checkbox], input[type=radio]
+    {
+        height: 20px;
+        width: 20px;
+        border: 5px solid orange;
+        background-color: rgb(13, 19, 17);
+    }
+    input[type=text]:focus
+    {
+        background-color: brown;
+    }
