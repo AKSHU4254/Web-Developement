@@ -1,15 +1,15 @@
 div{
     height: 100px;
     width: 100px;
-    /* border-radius: 50%; */
+    border-radius: 50%;
     position: relative;
-    background-color: yellow;
+    background-color: rgb(29, 223, 107);
     animation-name: anim;
     animation-duration: 4s;
     animation-delay: 2s;
-    animation-iteration-count: 3;
+    animation-iteration-count: 2;
     animation-direction: alternate ;
-    border: 5px black dashed;
+    border: 5px rgb(220, 45, 45) solid;
 }
 
 /* @keyframes anim
@@ -37,15 +37,15 @@ div{
 } */
 
 .mar{
-    margin-left: 200px;
+    margin-left: 100px;
     
 }
-.mar3{
-    margin-left: 200px;
-    margin-bottom: -550px;
+.mar2{
+    margin-left: 300px;
+    /* margin-bottom: -550px; */
 }
 .mar1{
-    margin-left: 400px;
+    margin-left: 200px;
 }
 
 #div1{
@@ -61,7 +61,7 @@ div{
     animation-timing-function: ease-out;
 }
 #div5{
-    animation-timing-function: steps(5);
+    animation-timing-function: steps(6);
 }
 #div6{
     animation-timing-function: linear;
