@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Gradient Effect</title>
+    <style>
+        .lin {
+            
+            border: 2px solid black;
+            margin-left: 25px;
+            width: 700px;
+            height: 200px;
+        }
+
+
+        /* .a{
+        background-image: linear-gradient(to right,pink,purple);
+    } */
+
+        /* .a{background-image: linear-gradient(100deg,pink,purple);} */
+
+        /* .a{background-image: linear-gradient(to bottom,blue,yellow,red,wheat);} */
+
+        .a {
+            background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+        }
+
+        /* .a{background-image: repeating-linear-gradient(red,blue 10%,yellow 20%)} */
+
+
+        /* _______________________________________________________________________________________________________ */
+
+        .rad {
+            border: 2px solid black;
+            margin-left: 25px;
+            width: 700px;
+            height: 200px;
+        }
+
+        .r {
+            background-image: radial-gradient(yellow, red, purple);
+        }
+
+        /* .r1{ background-image: radial-gradient(circle,  yellow, red, purple, wheat,brown,black,orange);}
+
+    .r2{ background-image: radial-gradient(closest-side at 65% 55%,  yellow, red, purple, wheat,brown,black,orange);}
+
+    .r3{ background-image: radial-gradient(closest-corner  at 65% 55%,  yellow, red, purple, wheat,brown,black,orange);}
+
+    .r4{ background-image: radial-gradient(farthest-side at 65% 55%,  yellow, red, purple, wheat,brown,black,orange);}
+
+    .r5{ background-image: radial-gradient(farthest-corner,  yellow, red, purple, wheat,brown,black,orange);} */
+
+        /* _________________________________________________________________________________________________________________________________ */
+
+        .con {
+            background-image: conic-gradient(blue, red, yellow);
+        }
+
+        .con1 {
+            background-image: conic-gradient(blue 45deg, red 20deg, yellow);
+        }
+
+        .con2 {
+            background-image: conic-gradient(blue, red, yellow);
+            border-radius: 50%;
+        }
+
+        .con3{
+            background-image: conic-gradient(from 45deg, blue, red, yellow);
+        }
+
+        .con4 {
+            background-image: conic-gradient(at 60% 40%,blue,red,yellow);
+        }
+
+        .con5{  
+            border-radius: 50%;
+            background-image: repeating-conic-gradient(blue 10%,red 20%,yellow 25% );
+        }
+    </style>
+
+</head>
+
+<body>
+
+      <div class="lin a">
+        <h2>This Is Linear Gradient Effect</h2>
+    </div><br><br>
+
+    <div class="rad r">This is Radial Effect</div><br>
+
+    <div class="lin con">This is Conic Effect</div><br>
+    <!-- _________________________________________________________________________________________________________________ -->
+
+    <div class="rad con">con</div><br>
+    <div class="rad con1">con1</div><br>
+    <div class="rad con2">con2</div><br>
+
+    <div class="rad con3">con3</div><br>
+    <div class="rad con4">con4</div><br>  
+    <div class="rad con5">con5</div>
+    <!-- _________________________________________________________________________________________________________________ -->
+</body>
+
+</html>

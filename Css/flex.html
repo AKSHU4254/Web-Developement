@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #flx {
+            height: 500px;
+            width: 500px;
+            margin-left: 35px;
+            margin-top: 25px;
+            border: 2px solid black;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-content: center;
+            flex-direction: row;
+        }
+
+        .items {
+            flex-basis: 100px;
+            /* flex-grow: 2; */
+            /* flex-shrink: 3; */
+
+        }
+
+        #flx div:nth-of-type(2)
+        {
+            flex-grow: 3;
+            /* flex-shrink: 2; */
+        }
+        img{
+            height: 130px;
+            width: 130px;
+        }
+
+        p{
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="flx">
+        <div class="items"><img src="/CSS/images/KTHM LOgo.jpg"> </div>
+
+      
+        <div class="items">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Corporis delectus quae ipsum. Facere, eius
+                impedit dolore id neque quae, ipsum accusamus 
+                adipisci suscipit pariatur itaque odit cum sint odio.
+                Amet?</p>
+            </div>
+
+
+              <div class="items"><img src="/CSS/images/KTHM LOgo.jpg"></div>
+
+        <div class="items"><img src="/CSS/images/KTHM LOgo.jpg"></div>
+
+        <div class="items"><img src="/CSS/images/KTHM LOgo.jpg"></div>
+
+        <div class="items"><img src="/CSS/images/KTHM LOgo.jpg"></div>
+
+
+
+        <!-- <div class="items"></div>
+
+        <div class="items"></div> -->
+
+    </div>
+</body>
+
+</html>

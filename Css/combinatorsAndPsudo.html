@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinators & Psudo Classes</title>
+    <style>
+        /* div p{
+            color: red;
+        } */
+
+        /* div>p{
+            color: blue;
+        } */
+
+        /* div+p
+        {
+            color: red;
+        } */
+
+        /* div-p{
+            color: red;
+        } */
+
+        a:link{
+            color: brown;
+        }
+        a:active{
+            color: beige;
+            background-color: red;
+        }
+        a:visited{
+            
+            color: orchid;
+        }
+
+        a.bold:hover{
+            font-size: 40px;
+            font-weight: 500;
+            background-color: black;
+            color: white;
+        }
+
+        p i:first-child{
+            color: red;
+        }
+
+        p::first-line{
+            color: blueviolet;
+            font-size: 25;
+        }
+
+        p::first-letter{
+            color: red;
+            font-size: 25px;
+        }
+
+        ::marker{
+            font-size: 20px;
+            color: green;
+        }
+
+        ::selection{
+            background-color: red;
+            color: white;
+        }
+
+        h1::after{
+            content: url('/CSS/images/fyning.png');
+        }
+        h1::before{
+            content: url('/CSS/images/fyning.png');
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Amit Darekar</h1>
+    <div>
+
+        <p>1Lorem ipsum, dolor sit <i>amet consectetur</i> adipisicing elit. Expedita vero, iste voluptatem mollitia
+            necessitatibus eius et similique quo hic debitis? <i>Assumenda</i> deserunt, alias optio ullam illo facilis numquam
+            laudantium voluptatem?</p>
+        <p>2Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae nihil laudantium illum minima quisquam
+            officiis soluta quia nisi obcaecati architecto quam sapiente nulla iste, repellat harum esse dolorem
+            temporibus tempora!</p>
+        <p>3Lorem <i>ipsum,</i> dolor sit amet consectetur adipisicing elit. <i>Repellendus aut quidem reprehenderit</i>
+            obcaecati nisi? Tempora quia asperiores laboriosam aliquid modi cumque perferendis nesciunt eum, itaque
+            vitae? Quo aut commodi similique.</p>
+        <p>4Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti earum iure omnis voluptates nam
+            praesentium dolores, adipisci doloribus quaerat soluta itaque. Sed, animi. Cumque commodi, architecto vero
+            molestiae laborum provident!</p>
+        <p>5Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum fuga fugiat, obcaecati unde iste nobis aliquid
+            ut. Est, rerum fuga excepturi obcaecati incidunt velit temporibus, dolores, aut quod molestiae assumenda!
+        </p>
+
+    </div>
+
+    <p>6Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique eius porro iusto quasi cumque ipsa rerum nemo,
+        iste sed quaerat rem quis vel cupiditate, deleniti velit. Esse similique ex dolorum.</p>
+    <p>7Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt laboriosam autem non unde incidunt tempora
+        fuga animi molestiae pariatur rem minus, necessitatibus impedit vero fugiat omnis accusamus inventore in totam.
+    </p><br>
+
+    <a href="/CSS/Base.html" class="bold" target="_blank">Click Here</a>
+
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+        <li>item 6</li>
+    </ul>
+</body>
+
+</html>
