@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button onclick="wop()">Open Window</button>
+<button onclick="wcl()">Close Window</button>
+<button onclick="moveWin()">Move Window</button>
+<button onclick="rewin()">Resize window</button>
+<p id="p1"></p>
+<p id="p2"></p>
+<script>
+    // window.open method
+    let mwin;
+function wop() 
+{
+//    window.open("https://www.google.com");
+      window.open("C:\Users\Swapnil Bauskar\Desktop\Akshu4254\JavaScript\Basic\form2.html");
+   // mwin=window.open("", "", "width=200, height=100");
+}
+// window.close method
+function wcl() 
+{
+window.close();
+}
+// window.moveto method
+function moveWin() 
+{
+  mwin.moveTo(500, 100);
+}
+// window.resize to method
+function rewin() 
+{
+  mwin.resizeTo(500, 500); 
+}
+// setinterval method
+setInterval(msg,3000);
+function msg()
+{
+  document.getElementById("p1").innerHTML+="Hello!!!";
+}
+// window properties
+window.name="adssa";
+let name=window.name;
+let loc=window.location;
+let stat=window.status;
+//document.getElementById("p2").innerHTML="Window name is "+ name;
+//document.getElementById("p2").innerHTML="Window location is: "+ loc;
+document.getElementById("p2").innerHTML="Window status is: "+ stat;
+</script>
+
+</body>
+</html>
