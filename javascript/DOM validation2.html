@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="Javascript">
+        function valid()
+        {
+            var unm=frm.t1.value;
+            var psd=frm.pwd.value;
+            var cnt1=unm.length;
+            var cnt2=psd.length;
+            var pin=frm.t2.value;
+            
+            // Username validation
+            if(cnt1==0)
+            {
+                alert("Please Enter User Name.");
+                frm.t1.focus();
+            }
+            if(cnt1<4||cnt1>8)
+            {
+                alert("Username should be from 4 to 8 characters");
+                frm.t1.focus();
+            }
+            for(i=0;i<=cnt1;i++)
+            {
+              if((unm[i]=='@')||(unm[i]=='#')||(unm[i]=='$')||(unm[i]=='%')||(unm[i]=='&'))
+            {
+                alert("Special symbols are not allowed in username");
+                frm.t1.focus();
+            }
+            }  
+        //     Password validation
+         if(cnt2==0)
+            {
+                alert("Please Enter Password.");
+                frm.pwd.focus();
+            }
+         if(cnt2<8||cnt2>12)
+            {
+                alert("Password should be from 8 to 12 characters");
+                frm.pwd.focus();
+            }
+        for(j=0;j<=cnt2;j++)
+            {
+             if((psd[j]=="@")||(psd[j]=="#")||(psd[j]=="$")||(psd[j]=="%")||(psd[j]=="&"))
+            {
+                alert("Special symbols are not allowed in Password");
+                frm.pwd.focus();
+            }
+        }
+    
+            
+        
+            // Pincode validation
+        //     if(pin.length==0)
+        //     {
+        //         alert("Please Enter Pin Code");
+        //         frm.t2.focus();
+        //     }
+        //    else if(isNaN(pin))
+        //     {
+        //         alert("Please enter digits");
+        //         frm.t2.focus();
+        //     }
+        //      else if(pin.length<6||pin.length)
+        //     {
+        //         alert("Pincode must contain 6 to 8 digits");
+        //         frm.t2.focus();
+        //     }
+            
+        //     frm.t3.focus();
+        }
+
+
+        
+    </script>
+    </head>
+    <body>
+   <form name="frm">
+    User Name:<input type="text" name="t1"><br><br>
+    Password:<input type="password" name="pwd"><br><br>
+    <!-- Pincode:<input type="text" name="t2"><br><br> -->
+    <!-- Date:<input type="date" name="t3"><br><br>
+    Email:<input type="email"><br><br> -->
+    <input type="submit" onclick="valid()">   
+    <input type="reset">
+    </form>
+    </body>
+    </html>

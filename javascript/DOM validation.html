@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number</title>
+</head>
+<body>
+    <form name="frm">
+        Enter Pincode: <input type="text" name="t1">
+        <input type="button" value="Accept" onclick="validpin()"><br><br>
+        Enter Mobile No: <input type="text" name="t2">
+        <input type="button" value="Accept" onclick="Mobno()"><br>
+    </form>
+    <script lang="Javascript">
+        function validpin()
+        {
+            var pin;
+            pin=frm.t1.value;
+            if(pin.length==0)
+            {
+                alert("Please Enter Pin Code");
+                frm.t1.focus();
+            }
+            else if(isNaN(pin))
+            {
+                alert("Please Enter a Digit");
+                frm.t1.focus();
+            }
+            else if(pin.length<6||pin.length>8)
+            {
+                alert("Pincode must contain 6 to 8 digits");
+                frm.t1.focus();
+            }
+            else
+            alert("Pincode Accepted")
+        }
+        function Mobno()
+        {
+            var num;
+            num=frm.t2.value;
+            if(num.length==0)
+            {
+                alert("Please Enter Mobile No.");
+                frm.t2.focus();
+            }
+            else if(isNaN(num))
+            {
+                alert("Please Enter a Digit");
+                frm.t2.focus();
+            }
+            else if(num.length<10||num.length>12)
+            {
+                alert("Pincode must contain 6 to 8 digits");
+                frm.t2.focus();
+            }
+            else
+            alert("Mobile No. Accepted")
+        }
+    </script>
+    
+</body>
+</html>
