@@ -1,0 +1,29 @@
+.fcontainer {
+    display: flex;
+    border: 2px solid rgb(143, 232, 9);
+    height: 45vh;
+    /* flex-direction: column; */
+    /* justify-content: center;*/  /* flex-end flex-start */
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+    /* flex-flow: column wrap; */
+}
+.fitem {
+  background-color: blueviolet;  
+  border: 2px solid grey;
+  margin:12px;
+  width: 122px;
+  height: 122px;
+}
+.item1{
+    /* order: 3; */
+    /* flex-grow: 3; */
+    flex-shrink: 2;
+}
+.item4{
+    /* order: 2; */
+    /* flex-grow: 2; */
+    /* flex-shrink: 3; */
+     align-self: center;
+}
