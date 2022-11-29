@@ -13,56 +13,56 @@
             
             if(d.value.match(v))
             {
-            document.frm1.t1.focus();
+                document.frm1.t1.focus();
             
-            var a = d.value.split('/');
-            var b = d.value.split('-');
-            al = a.length;
-            bl = b.length;
-            
-            if (al>1)
-            {
-            var pdate = d.value.split('/');
+                var a = d.value.split('/');
+                var b = d.value.split('-');
+                al = a.length;
+                bl = b.length;
+                
+                if (al>1)
+                 {
+                    var pdate = d.value.split('/');
+                 }
+                else if (bl>1)
+                 {
+                    var pdate = d.value.split('-');
+                 }
+
+                var dd = parseInt(pdate[0]);
+                var mm  = parseInt(pdate[1]);
+                var yy = parseInt(pdate[2]);
+                
+                var ListofDays = [31,28,31,30,31,30,31,31,30,31,30,31];
+                if (mm==1 || mm>2)
+                 {
+                     if (dd>ListofDays[mm-1])
+                     {
+                        alert('Invalid date format!');
+                     }
+                 }
+                if(mm==2)
+                {
+                    var lyear=false;
+                if (((yy%4)==0) && ((yy%100)!==0))
+                {
+                lyear = true;
+                }
+                if ((lyear==false) && (dd>=29))
+                {
+                alert('Invalid date format!');
+                }
+                if ((lyear==true) && (dd>29))
+                {
+                alert('Invalid date format!');
+                }
+                }
             }
-            else if (bl>1)
-            {
-            var pdate = d.value.split('-');
-            }
-            var dd = parseInt(pdate[0]);
-            var mm  = parseInt(pdate[1]);
-            var yy = parseInt(pdate[2]);
-            
-            var ListofDays = [31,28,31,30,31,30,31,31,30,31,30,31];
-            if (mm==1 || mm>2)
-            {
-            if (dd>ListofDays[mm-1])
-            {
-            alert('Invalid date format!');
-            
-            }
-            }
-            if(mm==2)
-            {
-            var lyear=false;
-            if (((yy%4)==0) && ((yy%100)!==0))
-            {
-            lyear = true;
-            }
-            if ((lyear==false) && (dd>=29))
-            {
-            alert('Invalid date format!');
-            }
-            if ((lyear==true) && (dd>29))
-            {
-            alert('Invalid date format!');
-            }
-            }
-            }
-            else
-            {
-            alert("Invalid date format!");
-            document.frm1.t1.focus();
-            }
+                else
+                {
+                alert("Invalid date format!");
+                document.frm1.t1.focus();
+                }
         }
     </script>
 </head>

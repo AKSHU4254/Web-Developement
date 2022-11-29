@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This</title>
+</head>
+<body bgcolor="lightblue">
+    <p id="p1"></p>
+    <script>
+        const person= {
+            firstName: "Akshay",
+            lastName: "Bauskar",
+            id: 4254,
+            fullName : function()
+            {
+                return this.firstName +" "+this.lastName+" "+this.id;
+            }
+        };
+        document.getElementById("p1").innerHTML=person.fullName();
+    </script>
+</body>
+</html>
