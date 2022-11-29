@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="Javascript">
+        function validate()
+        {
+            var e=document.frm1.t1;
+            var v=/^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            if(e.value=="")
+            {
+                alert("Please enter Email ID");
+                document.frm1.t1.focus();
+            }
+            if(e.value.match(v))
+            {
+                alert("valid Email address!");
+                document.frm1.t1.focus();
+            }
+            else
+            {
+                alert("Please Enter Valid Email address");
+                document.frm1.t1.focus();
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="frm1">
+    Enter Email:<input type="text" name="t1"><br>
+    <input type="button" value="validate" onclick="validate()">
+</form> 
+</body>
+</html>
