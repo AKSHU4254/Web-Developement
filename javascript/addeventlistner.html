@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add even listner</title>
+</head>
+<body>
+    <button id="b1">Date</button>
+    <button id="b2">Message</button>
+    <button id="b3">Function</button>
+    <button id="b4">Many Events</button>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <div id="div">
+        <button onclick="removeHandler()" id="myBtn">Remove</button>
+    </div>
+    <script lang="javascript">
+        // Addeventlistner
+        document.getElementById("b1").addEventListener("click",display);
+        function display()
+        {
+            document.getElementById("p1").innerHTML=Date();
+        }
+        // addeventlistner to an element
+        document.getElementById("b2").addEventListener("click", function(){
+            alert("Welcome to javascript");});
+            
+            //  add many event handlers to the same element
+            var x=document.getElementById("b3");
+            x.addEventListener("click",mes1);
+            x.addEventListener("click",mes2);
+            function mes1()
+            {
+                alert("Hello Everyone !!");
+            }
+            function mes2()
+            {
+                alert("How are You !!");
+            }
+            // add many events to the same element
+            var y=document.getElementById("b4");
+            y.addEventListener("mouseover",clr1);
+            y.addEventListener("click",clr2);
+            y.addEventListener("mouseout",clr3)
+            function clr1()
+            {
+                document.bgColor="grey";
+            }
+            function clr2()
+            {
+                document.bgColor="lightblue";
+            }
+            function clr3()
+            {
+                document.bgColor="cyan";
+            }
+            // add an event handler to the window object
+            window.addEventListener("resize",function() {
+            document.getElementById("p2").innerHTML=Math.random();
+            });
+            // remove event listner
+            document.getElementById("div").addEventListener("mousemove",m1);
+            function m1()
+            {
+                document.getElementById("p3").innerHTML=Math.random();
+            }
+            function removeHandler()
+            {
+                document.getElementById("div").removeEventListener("mousemove",m1);
+            }
+    </script>
+</body>
+</html>
