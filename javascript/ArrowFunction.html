@@ -11,14 +11,19 @@
     <p id="p2"></p>
     <p id="p3"></p>
     <p id="p4"></p>
+    <p id="p5"></p>
     <script>
         // simple arrow function
         var hello;
         hello = () => "Hello World";
         document.getElementById("p1").innerHTML=hello();
+
+    
         // Arrow function with parameter
         let add=(a,b) => a+b;
         document.getElementById("p2").innerHTML=add(4,5);
+
+
         // arrow function without parentheses
         var msg;
         msg = displ => "Hello" + displ;
@@ -26,6 +31,9 @@
         var msg2;
         msg2 = displ => "Akshay" + displ;
         document.getElementById("p4").innerHTML=msg2(" Bauskar");
+        var msg3;
+        msg3 = displ => displ;
+        document.getElementById("p5").innerHTML=msg3(" Bauskar");
     </script>
 </body>
 </html>
