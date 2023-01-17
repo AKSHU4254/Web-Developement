@@ -12,36 +12,37 @@
     font-family: "sofia",sans-serif;
     font-size: 20px;
 }
+
 body
 {
     background-image: url('img_lights.jpg');
-    background-size:cover;
+     background-size:cover;  /* it covers the whole screen */
 }
 p
 {
-    height: 500px;
+    height: 300px;
     width: 500px;
-    margin-left: 100px;
+    margin-left: 30px;
     border-color:brown ;
     border-style: solid;
     border-width: 6px;
     border-radius: 10px;
     background-color: aqua;
     outline-color: palevioletred;
-    outline-style: dashed;
-    outline-width: 20px;
+    outline-style: solid;
+    outline-width: 5px;
     outline-offset: 10px;
 }
 a:link,a:visited
 {
-    background-color: coral;
-    color:darkgreen;
+    background-color: rgb(237, 233, 231);
+    color:rgb(22, 37, 204);
 
 }
 a:hover,a:active
 {
-    background-color: cadetblue;
-    color: brown;
+    background-color: rgb(15, 15, 15);
+    color: rgb(81, 230, 51);
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
